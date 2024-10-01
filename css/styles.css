@@ -201,6 +201,9 @@ footer{
         background-color: #FFFFFF;
         width: calc((100% - 48px) / 3);
 }
+.advants{
+        width: calc((100% - 48px) / 3);
+}
 .sec-two-title{
             position: absolute;
             width: 1px;
