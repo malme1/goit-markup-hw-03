@@ -57,17 +57,17 @@ header > .container{
 }
 .page-nav {
     display: flex;
-    column-gap: 76px;
+    align-items: center;
 }
 header{
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav{
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .header-address {
@@ -77,11 +77,11 @@ header{
 
 .address-nav{
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 
-.logo{
+.logo-top, .logo-bot{
     font-family: "Raleway", sans-serif;
         font-weight: 700;
         font-size: 18px;
@@ -90,8 +90,14 @@ header{
         text-transform: uppercase;
         color: #4d5ae5;
 }
-
-.logo .span-logo{
+.header  .logo-top{
+    margin-right: 76px;
+}
+.footer .logo-bot{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.logo-top .span-logo{
     color: #2e2f42;
 }
 .adres{
@@ -115,7 +121,8 @@ section .main-btn{
         margin-right: auto;
         margin-left: auto;
     align-items: center;
-    display: flex;
+ display: block;
+ min-width: 169px;
     
 }
 .section .main-btn:hover, .main-btn:focus{
@@ -123,15 +130,15 @@ section .main-btn{
 }
 
 .main-title{
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.08;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #fff;
-        padding-bottom: 48px;
-        padding-left: 316px;
-        padding-right: 316px;
+
+        line-height: 1.07;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+            font-size: 56px;
+            font-weight: 700;
+            max-width: 496px;
+            margin: 0 auto 48px;
         
 }
 
@@ -191,11 +198,14 @@ footer{
         letter-spacing: 0.02em;
         color: #f4f4fd;
         width: 264px;
-        margin-top: 16px;
 }
 .persons{
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
+    padding: 0px 0px 32px 0px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
 }
 .apps{
         background-color: #FFFFFF;
@@ -219,22 +229,19 @@ footer{
 
 
         }
-
-
-        .section-one{
-            padding-top: 0px;
+.section-one{
+    padding-top: 0px;
             
-                    background: #2e2f42;
-                    padding-top: 188px;
-                    padding-bottom: 188px;
-            
+        background: #2e2f42;
+        padding-top: 188px;
+        padding-bottom: 188px;            
         }
 .section-three{
     background: #f4f4fd;
 }
 .person-list{
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 .portfolio-list{
     display: flex;
@@ -244,8 +251,7 @@ footer{
 }
 .sec-two-list{
     display: flex;
-    
-    column-gap: 24px;
+    gap: 24px;
 }
 .persons-wrap{
     text-align: center;
